@@ -1,0 +1,55 @@
+@import "../../styles/variables.scss";
+
+.navigation {
+    font-size: $FS-subtitle;
+  
+    li {
+      display: flex;
+      align-items: center;
+      color: $detailsColor;
+      text-decoration: none;
+      padding: 0 0 0 10px;
+  
+      a {
+        color: $secondaryColor;
+  
+        &.active,
+        &:hover {
+          color:$secondaryColor;
+          cursor: pointer;
+        }
+  
+        span {
+          padding: 20px;
+          display: inline-block;
+        }
+      }
+  
+      a {
+        color: $detailsColor;
+        text-decoration: none;
+      }
+  
+      .icon {
+        margin-right: 20px;
+        min-width: 30px;
+        display: inline-block;
+      }
+    }
+    @media (max-width: 599px) {
+      .navigation{
+        padding-left: 0;
+        margin-left:0;
+
+      
+      ul {
+        padding-left:0;
+      }
+      li {
+        justify-content: center;
+      }
+      span{
+        display:none;
+      }
+    }}
+  }

@@ -1,0 +1,24 @@
+[
+    {
+      "title": "Project 1",
+      "category": "Code",
+      "description": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis",
+      "imgSrc": "https://picsum.photos/200/300",
+      "link": "https://example.com/source1"
+    },
+    {
+      "title": "Project 2",
+      "category": "UI",
+      "description": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis",
+      "imgSrc":"https://picsum.photos/200/301",
+      "link": "https://example.com/source2"
+    },
+    {
+      "title": "Project 3",
+      "category": "Code",
+      "description": "Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis",
+      "imgSrc": "https://picsum.photos/200/302",
+      "link": "https://example.com/source2"
+    }
+    ]
+  

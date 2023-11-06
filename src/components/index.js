@@ -1,0 +1,12 @@
+export { default as Address } from './Address';
+export { default as Box } from './Box';
+export { default as Button } from './Button';
+export { default as Expertise } from './Expertise';
+export { default as Feedback } from './Feedback';
+export { default as Info } from './Info';
+export { default as Panel } from './Panel';
+export { default as PhotoBox } from './PhotoBox';
+export { default as Portfolio } from './Portfolio';
+export { default as Timeline } from './Timeline';
+export { default as ScrollUpButton } from './ScrollUpButton';
+export { default as Skills } from './Skills';

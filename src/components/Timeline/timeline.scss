@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+.centered-icon{
+  color:$secondaryColor;
+  font-size:50px;
+  position:absolute;
+  right:50%;
+}
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+  color:red;
+  font-size:$FS-L;
+}
+
+.timeline {
+    min-height: 30vh;
+    max-height: 80vh;
+    overflow: auto;
+    position:relative;
+  }
+  
+  .timeline-list {
+    position: relative;
+    padding: 15px;
+  
+    &:before {
+      background: #26c17e;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 10px;
+      width: 4px;
+      content: "";
+      margin-left: 18px;
+    }
+  
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 10px;
+  
+      .timeline-date {
+        padding: 15px;
+        background: #fff;
+        position: relative;
+        left: -15px;
+      }
+  
+      .timeline-event {
+        position: relative;
+        background-color:$info-bg-color;
+        width: 100%;
+        padding:0 20px;
+  
+        &:after {
+          content: "";
+          position: absolute;
+          top: 15px;
+          left: -10px;
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-right: 10px solid #eee;
+        }
+      }
+    }
+  }
+  
+

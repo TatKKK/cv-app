@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.info-box {
+    width: 95%;
+    padding-bottom:20px;
+
+    h2 {
+        color: $secondaryColor;
+        margin-bottom: 40px;
+        font-size:$FS-L;
+        font-weight:700;
+        line-height:30px;
+    }
+}

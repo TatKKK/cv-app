@@ -1,0 +1,58 @@
+@import "./styles/variables.scss";
+
+
+*, html {
+  scroll-behavior: smooth!important;
+}
+#root{
+  display: flex;
+  flex-wrap: wrap;
+}
+.App{
+  display:flex;
+}
+ul{
+  list-style:none;
+}
+.button {
+    height: 20px;
+    display: inline-block;
+    background-color:$primaryColor;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    color:#FFF;
+    cursor: pointer;
+  
+    &:hover {
+      background-color: #26c17e;
+    }
+  }
+  
+  span.button{
+    height:20px;
+    display:inline-block;
+    background-color:#222935;
+    border-radius:5px;
+    padding:10px 20px;
+    margin:10px;
+    color:#fff;
+    cursor:pointer;
+
+    &:hover{
+      background-color:#26c17e;
+    }
+  }
+
+
+  form {
+    display: flex;
+    flex-direction: column;
+  
+    & input {
+      margin-bottom: 20px;
+      border-radius: 5px;
+      line-height: 30px;
+    }
+  }
+  

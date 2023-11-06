@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+
+.expertise-list {
+  ul{
+    padding-left:0;
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+  }
+   
+    .expertise-list-date {
+      width: 160px;
+      margin-right: 50px;
+  
+      span {
+        color: $detailsColor;
+        font-size: $FS-subtitle;
+      }
+    }
+  
+    h3 {
+      font-weight: 700;
+      font-size:$FS-subtitle;
+      line-height:19px;
+      margin-bottom: 10px;
+    }
+  }

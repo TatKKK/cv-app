@@ -1,0 +1,88 @@
+@import "../../styles/variables.scss";
+
+.photo-box {
+    /*background: #f0f0f0; */
+
+    .title {
+      font-size: $FS-L;
+      line-height:30px;
+      font-weight: 600;
+      margin: 10px 0;
+    }
+  
+    figcaption {
+      margin-top: 10px;
+      text-align: center;
+      color:$figCaptionColor;
+    }
+  
+    figcaption h5 {
+      font-weight: 400;
+      font-size:15px;
+    }
+  
+    strong {
+      font-size: $FS-XL;
+      line-height:54px;
+      font-weight: 700;
+    }
+  
+    .crop-photo {
+      width: 163px;
+      height: 163px;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      /*position: relative;*/
+      border: 1px solid #fff;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .simple-user-photo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .crop-photo img {
+      /*height: 100%;
+      position: absolute;
+      margin: auto;
+      min-height: 100%;
+      min-width: 100%;
+      left: -100%;
+      right: -100%;
+      top: -100%;
+      bottom: -100%;*/
+      height: auto;
+      width:auto;
+      min-height: 100%;
+      min-width: 100%;
+    }
+    @media (max-width: 599px) {
+      
+     .panel .crop-photo {
+        width: 40px;
+        height: 40px;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        margin: 0 auto; 
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+      }
+      
+     .panel .crop-photo img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; 
+      }
+    }
+  }

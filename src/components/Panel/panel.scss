@@ -1,0 +1,90 @@
+@import "../../styles/variables.scss";
+
+.panel {
+  position:fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background-color: $primaryColor;
+  transition: transform 0.5s;
+  margin-right: 40px;
+
+  &.collapsed{
+      transform: translateX(-200px);
+  }
+ 
+  .photo-box {   
+    figcaption {
+      color:#fff;
+      strong {
+        font-size: $FS-subtitle;
+        line-height: 24px;
+      }
+
+      .crop-photo {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  .button-slider {
+    position: absolute;
+    top: 50px;
+    right: -40px;
+    padding: 10px 0;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: $FS-details;
+    background: $primaryColor;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+
+  @media (max-width: 599px) {
+    .panel{
+      position:fixed;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+      background-color: $primaryColor;
+      transition: transform 0.5s;
+      margin-right: 40px;
+
+      .navigation{
+        padding-left:0;
+      }
+          .navigation li {
+            margin-bottom: 30px;
+          }
+      
+          .navigation li span {
+            display: none;
+          }
+      
+          .photo-box .crop-photo {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto; 
+          }
+      
+          .button {
+            width:10px;
+            text-align:center;
+            display:block;
+            overflow:hidden;
+            padding:5px 15px;
+            margin-left:-10px;
+            left:50%;
+            background-color: $secondaryColor;
+          }
+      
+          figcaption {
+            strong {
+              display: none;
+            }
+          }
+        }
+}}
