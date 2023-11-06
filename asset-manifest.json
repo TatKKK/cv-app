@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/TatKKK/cv-app.git/static/css/main.3943b7c4.css",
+    "main.js": "/TatKKK/cv-app.git/static/js/main.074db436.js",
+    "static/media/welcome-bg.png": "/TatKKK/cv-app.git/static/media/welcome-bg.d498ec78b0ac23c6c3bc.png",
+    "static/media/avatar.jpg": "/TatKKK/cv-app.git/static/media/avatar.b6f3dfbbd2d5049ba83f.jpg",
+    "static/media/hjhj.jpg": "/TatKKK/cv-app.git/static/media/hjhj.b317ae3bef2b42f3156a.jpg",
+    "index.html": "/TatKKK/cv-app.git/index.html",
+    "main.3943b7c4.css.map": "/TatKKK/cv-app.git/static/css/main.3943b7c4.css.map",
+    "main.074db436.js.map": "/TatKKK/cv-app.git/static/js/main.074db436.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3943b7c4.css",
+    "static/js/main.074db436.js"
+  ]
+}
