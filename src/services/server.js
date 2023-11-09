@@ -23,10 +23,10 @@ export default function Server() {
       this.get("/education", () => {
         return {
           education: [
-            { id: 1, date: 2023, title: "Epam", description: "blablabla" },
-            { id: 2, date: 2023, title: "Georgia Revenue Service", description: "blablabla" },
-            { id: 3, date: 2023, title: "Tegeta Motors", description: "blablabla" },
-            { id: 4, date: 2023, title: "SBA Georgia", description: "blablabla" },
+            { id: 1, date: 2023, title: "Epam", description: "Front-end Development Upskill" },
+            { id: 2, date: 2019, title: "MSC in Management", description: "Caucasus University, Business School" },
+            { id: 3, date: 2018, title: "Erasmus Exchange Program", description: "University of Logistics and Transport, Wroclaw, Poland" },
+            { id: 4, date: 2010, title: "Applied Mathematics and Computer Sciences", description: "Ivane Javakhishvili Tbilisi State University" },
           ],
         }
       }, {timing:3000});

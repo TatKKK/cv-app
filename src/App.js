@@ -4,8 +4,7 @@ import './App.scss';
 
 
 function App() {
-  return (
-   
+  return (   
     <HashRouter>         
      <Main />   
     </HashRouter>  

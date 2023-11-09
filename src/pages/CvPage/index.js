@@ -27,40 +27,15 @@ function CvPage() {
         <Panel isCollapsed={isCollapsed} onCollapse={handleCollapse} />   
     
     <main id="main-inner">
-     <Box title="About me"
-        content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-        Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-        condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque"
-        />     
+     <Box title="About me" id="About"
+        content="Passionate and analytically-minded professional with a strong foundation in computer science and mathematics, complemented by extensive experience in tax and customs administration, logistics, and international shipping. Adept at complex problem-solving and data analysis, I am now eager to leverage my technical skills and analytical expertise in a front-end development role. I am enthusiastic about contributing to innovative projects and growing in a dynamic, tech-forward environment."/>
      <Box title="Education" id="Education">
-        <Timeline
-          id="education"
-          data={[
-            {
-              date:2023,
-              title: "EPAM",
-              text:"Front-end Development Upskill",
-            },
-            {
-              date: 2019,
-              title: "MSC in Management",
-              text: "Caucasus University, Business School",
-            },
-            {
-              date: 2018,
-              title: "Erasmus Exchange Program",
-              text: "University of Logistics and Transport, Wroclaw, Poland",
-            },
-            {
-              date: 2010,
-              title: "Applied Mathematics and Computer Sciences",
-              text: "Ivane Javakhishvili Tbilisi State University",
-            },
-          ]}
+        <Timeline id="Education"
         />
     </Box>
-    <Box title="Experience" id="Experience">
-      <Expertise data={[ { 
+   <div id="Experience">
+   <Box title="Experience" id="Experience">
+      <Expertise id="Experience" data={[ { 
           date: '2010-2023', 
             info: 
               {
@@ -80,14 +55,15 @@ function CvPage() {
             } 
                 ]} />
     </Box>
+   </div>
    
-        <Skills/>
+        <Skills id="Skills"/>
     
     <Box title="Portfolio" id="Portfolio">
-        <Portfolio collapsed={isCollapsed} />
+        <Portfolio id="Portfolio" collapsed={isCollapsed} />
     </Box>    
     <Box title="Contacts" id="Contacts">
-       <Address />
+       <Address id="Contacts" />
     </Box>
     <Box title="Feedback" id="Feedbacks">
       <Feedback

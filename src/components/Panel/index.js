@@ -28,9 +28,8 @@ export default function Panel({ isCollapsed, onCollapse }) {
         
         <Navigation />        
         
-        <Button 
-        icon={<FontAwesomeIcon icon={faChevronLeft} />}
-        text="Go back" to="/"/>        
+        <Button  id="back-button"      
+        icon={<FontAwesomeIcon icon={faChevronLeft} />} text="Go back" to="/">  </Button>  
       
       </nav>
   );

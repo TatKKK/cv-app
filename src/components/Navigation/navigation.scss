@@ -1,6 +1,6 @@
 @import "../../styles/variables.scss";
 
-.navigation {
+/*.navigation {
     font-size: $FS-subtitle;
   
     li {
@@ -36,20 +36,51 @@
         display: inline-block;
       }
     }
-    @media (max-width: 599px) {
-      .navigation{
-        padding-left: 0;
-        margin-left:0;
+    }
 
-      
-      ul {
-        padding-left:0;
-      }
-      li {
-        justify-content: center;
-      }
-      span{
-        display:none;
-      }
-    }}
+    @media (max-width: 599px) {
+     .navigation{
+      padding-left: 0;
+      margin-left:0;
+     
+    ul {
+      padding-left:0;
+    }
+    li {
+      justify-content: center;
+    }
+    span{
+     visibility:hidden;
+    }
+  }}*/
+  .navigation{
+    font-size:16px;
   }
+  .navigation li{
+    display:flex;
+    align-items:center;
+    color:#667081;
+    text-decoration:none;
+    padding:0 0 0 10px;
+  }
+    .navigation li a{
+      color:#26c17e
+    }
+    .navigation li a.active,.navigation li a:hover{
+      color:#26c17e;
+      cursor:pointer;
+    }
+    .navigation li a span{
+      padding:20px;
+      display:inline-block;
+    }
+    .navigation li a{
+      color:#667081;
+      text-decoration:none;
+    }
+    .navigation li .icon{
+      margin-right:20px;
+      min-width:30px;
+      display:inline-block;
+    }
+  

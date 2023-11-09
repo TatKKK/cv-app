@@ -1,17 +1,20 @@
 @import "../../styles/variables.scss";
 
 .panel {
-  position:fixed;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  background-color: $primaryColor;
-  transition: transform 0.5s;
-  margin-right: 40px;
+
+    background:$primaryColor;
+    width:250px;
+    min-height:100%;
+    padding:20px 0 60px;
+    position:fixed;
+    box-sizing:border-box;
+    transition:all .5s ease 0s;
+    left:0;
+    float:left;
 
   &.collapsed{
-      transform: translateX(-200px);
+    
+     left:-200px;
   }
  
   .photo-box {   
@@ -25,6 +28,7 @@
       .crop-photo {
         width: 100px;
         height: 100px;
+        margin-bottom:40px;
       }
     }
   }
@@ -41,50 +45,63 @@
     border-radius: 0 5px 5px 0;
     cursor: pointer;
   }
+  }
+  /*@media (max-width:599px){
+    .panel{width:54px;left:-54px}
+    .panel .navigation li{margin-bottom:30px}
+    .panel .navigation li span{display:none}
+    .panel .open{left:0}
+    .panel .photo-box .crop-photo{width:40px;height:40px}
+    .panel .button{width:10px;text-align:center;display:block;overflow:hidden;padding:5px 15px;margin-left:-10px;left:17px}
+    figcaption strong{display:none}}
+    */
 
-  @media (max-width: 599px) {
-    .panel{
-      position:fixed;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      width: 100px;
-      background-color: $primaryColor;
-      transition: transform 0.5s;
-      margin-right: 40px;
-
-      .navigation{
-        padding-left:0;
-      }
-          .navigation li {
-            margin-bottom: 30px;
-          }
+    @media (max-width: 599px) {
+      .panel {
+        width: 54px;
+        height: 54px;
+        position:fixed;
+    
+        &.collapsed {
+          left: 0;
+        }
+    
+        .navigation {
+        
+            padding-left:0;
+            display:flex;
+            flex-direction:column;
+            align-items:start;
       
-          .navigation li span {
-            display: none;
-          }
-      
-          .photo-box .crop-photo {
-            width: 40px;
-            height: 40px;
-            margin: 0 auto; 
-          }
-      
-          .button {
-            width:10px;
-            text-align:center;
-            display:block;
-            overflow:hidden;
-            padding:5px 15px;
-            margin-left:-10px;
-            left:50%;
-            background-color: $secondaryColor;
-          }
-      
-          figcaption {
-            strong {
-              display: none;
+          li {  
+            line-height:10px;
+         
+            span {
+              visibility:hidden;
             }
           }
         }
-}}
+        .photo-box {
+          margin-left: -35px;
+          margin-bottom:40px;
+          .crop-photo {
+            width: 40px;
+            height: 40px;           
+          }
+        }
+        #back-button {
+          width: 40px;
+          white-space: nowrap;
+          overflow: hidden;
+    
+          span {
+              margin-left: 10px;
+              margin-right: 15px;
+          }
+      }
+      
+    
+        
+
+      }
+    }

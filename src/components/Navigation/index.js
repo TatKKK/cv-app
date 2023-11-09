@@ -1,4 +1,4 @@
-import { Link } from 'react-scroll';
+import { Link, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -10,53 +10,49 @@ import {
   faComment
 } from "@fortawesome/free-solid-svg-icons";
 import "./navigation.scss";
-import { Link as ScrollLink } from "react-scroll";
+
 
 const Navigation= () => {
   return (
       <ul className="navigation">
         <li>
-          <Link smooth spy to="About">
+          <Link smooth spy to="About" activeClass="active" offset={-70} duration={500}>
           <FontAwesomeIcon icon={faUser} data-testid="FontAwesomeIcon" /> 
           <span>About Me</span>
           </Link>
         </li>
         <li>
-          <ScrollLink
-              to="About"
-              spy={true}
-              smooth={true}
-              duration={800}>
-                <FontAwesomeIcon icon={faGraduationCap} data-testid="FontAwesomeIcon" /> 
+          <Link smooth spy to="Education" activeClass="active" offset={-70} duration={500}>
+          <FontAwesomeIcon icon={faGraduationCap} data-testid="FontAwesomeIcon" /> 
           <span>Education</span>
-              </ScrollLink>
+          </Link>            
         </li>
         <li>
-          <Link smooth spy to="Experience">
+          <Link smooth spy to="Experience" activeClass="active" offset={-70} duration={500}>
           <FontAwesomeIcon icon={faPencil} data-testid="FontAwesomeIcon" /> 
           <span>Experience</span>
           </Link>
         </li>
         <li>
-          <Link smooth spy to="Skills">
+          <Link smooth spy to="Skills" activeClass="active" offset={-70} duration={500}>
           <FontAwesomeIcon icon={faMagicWandSparkles} data-testid="FontAwesomeIcon"/> 
           <span>Skills</span>
           </Link>
         </li>
         <li>
-          <Link smooth spy to="Portfolio">
+          <Link smooth spy to="Portfolio" activeClass="active" offset={-70} duration={500}>
           <FontAwesomeIcon icon={faSuitcase} data-testid="FontAwesomeIcon"/> 
           <span>Portfolio</span>
           </Link>
         </li>
         <li>
-          <Link smooth spy to="Contacts">
+          <Link smooth spy to="Contacts" activeClass="active" offset={-70} duration={500}>
           <FontAwesomeIcon icon={faAddressBook} data-testid="FontAwesomeIcon" /> 
           <span>Contacts</span>
           </Link>
         </li>
         <li>
-          <Link smooth spy to="Feedbacks">
+          <Link smooth spy to="Feedbacks" activeClass="active" offset={-70} duration={500}>
           <FontAwesomeIcon icon={faComment} data-testid="FontAwesomeIcon" /> 
           <span>Feedback</span>
           </Link>

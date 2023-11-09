@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { storeSkills } from "../../utilities/storeSkills";
+import { storeSkills } from "../../utilities/storeskills";
 import { getStoredSkills } from "../../utilities/getStoredSkills";
 
 export const fetchSkills = createAsyncThunk(
